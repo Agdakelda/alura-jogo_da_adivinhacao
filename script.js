@@ -26,7 +26,7 @@ function verifyNumber(){ // função responsável por verificar o numero selecio
    
  if(bet > numberToFind){
         attemps++;
-        alert("O número a se escolhido é menor, tente novamente:");
+        alert("O número a ser escolhido é menor, tente novamente:");
     }
     else if(bet< numberToFind){
         alert(" O número encontrado é maior, tente novamente: ");
