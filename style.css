@@ -1,0 +1,79 @@
+:root{         
+    /* criando algumas variaveis de cores
+    Usamos o root, para guardar as cores que iremos
+     utilizar, se necessario a troca de cores, 
+     podemos alterar somente aqui poupando tempo 
+     de ter que alterar no cod todo.
+     */
+    --color-white:#fff;
+    --color-blue: #74b6f8;
+    --color-blue2:#368fe9;
+    --color-gray: #eeeeee;
+}
+body{
+/* all : unset; retira todas conf pré-existentes na pag*/
+    all:unset; 
+    /* definindo a font do texto da pag*/
+    font-family: Arial, Helvetica, sans-serif;
+    /* elementos flexiveis na pag*/
+    display: flex;
+    /* deixando o texto centralizado*/
+    justify-content: center;
+    /*Alinhando verticalmente no centro*/
+    align-items: center;
+    /*Altura minima do body*/
+    min-height: 100vh;
+    background-color: var(--color-blue);
+}
+.content{
+    display: flex;
+    /* mudar a direção da coluna*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* 1 rem == 16px gap espaçamento entre os elementos*/
+    gap: 1rem;
+    /* rgba faz o degrade, o efeito de tranparencia*/
+    background: rgba(0,0,0,0.6);
+    /* arredondar as bordas*/
+     border-radius:1rem ;
+     padding: 3rem 4rem;
+     color: var(--color-white);
+     
+}
+.content input{
+    /*tirar cor de fundo*/
+    background-color: transparent;
+    /*tirar a borda*/
+    border: none;
+    /* tirar a linha de fora*/
+    outline: none;
+    color: var(--color-white);
+    font-size: 1rem;
+    padding: .4rem;
+    border-bottom: 1px solid var(--color-white);
+    width: 50%;
+
+}
+.content input ::placeholder{
+    color: var(--color-white);
+}
+
+.content input:focus{
+    border-bottom: 1px solid var(--color-blue);
+}
+.content button{
+    padding: .8rem;
+    width: 80%;
+    font-size: 1rem;
+    background-color: var(--color-blue2);
+    border: none;
+    border-radius: 1rem;
+    color: var(--color-white);
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .4s;
+}
+.content button:hover{
+    background-color: var(--color-blue);
+}
